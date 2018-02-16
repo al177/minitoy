@@ -1,0 +1,1040 @@
+EESchema Schematic File Version 4
+LIBS:minitoy-cache
+EELAYER 26 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RF_WiFi:ESP-12E U?
+U 1 1 5A85BED2
+P 7400 2800
+F 0 "U?" H 7400 4078 50  0000 C CNN
+F 1 "ESP-12E" H 7400 3987 50  0000 C CNN
+F 2 "RF_Module:ESP-12E" H 7400 3050 50  0001 C CNN
+F 3 "http://wiki.ai-thinker.com/_media/esp8266/docs/aithinker_esp_12f_datasheet_en.pdf" H 7050 3100 50  0001 C CNN
+	1    7400 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L lattice:ICE40UP5K-SG48 U?
+U 1 1 5A85C0FE
+P 3150 2550
+F 0 "U?" H 3100 2650 60  0000 L CNN
+F 1 "ICE40UP5K-SG48" H 2800 2500 60  0000 L CNN
+F 2 "" H 3150 2550 60  0001 C CNN
+F 3 "" H 3150 2550 60  0001 C CNN
+	1    3150 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:MIC5504-3.3YM5 U?
+U 1 1 5A85F78C
+P 3100 7100
+F 0 "U?" H 3100 7467 50  0000 C CNN
+F 1 "MIC5504-3.3YM5" H 3100 7376 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 3100 6700 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf" H 2850 7350 50  0001 C CNN
+	1    3100 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:MIC5504-1.2YM5 U?
+U 1 1 5A85FB41
+P 1850 7100
+F 0 "U?" H 1850 7467 50  0000 C CNN
+F 1 "MIC5504-1.2YM5" H 1850 7376 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 1850 6700 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf" H 1600 7350 50  0001 C CNN
+	1    1850 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 1450 7400 1700
+$Comp
+L power:VDD #PWR?
+U 1 1 5A8600D2
+P 1400 6800
+F 0 "#PWR?" H 1400 6650 50  0001 C CNN
+F 1 "VDD" H 1417 6973 50  0000 C CNN
+F 2 "" H 1400 6800 50  0001 C CNN
+F 3 "" H 1400 6800 50  0001 C CNN
+	1    1400 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5A860158
+P 3650 6800
+F 0 "#PWR?" H 3650 6650 50  0001 C CNN
+F 1 "+3.3V" H 3665 6973 50  0000 C CNN
+F 2 "" H 3650 6800 50  0001 C CNN
+F 3 "" H 3650 6800 50  0001 C CNN
+	1    3650 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V2 #PWR?
+U 1 1 5A860190
+P 2400 6800
+F 0 "#PWR?" H 2400 6650 50  0001 C CNN
+F 1 "+1V2" H 2415 6973 50  0000 C CNN
+F 2 "" H 2400 6800 50  0001 C CNN
+F 3 "" H 2400 6800 50  0001 C CNN
+	1    2400 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 7000 2400 6800
+Wire Wire Line
+	2250 7000 2300 7000
+Wire Wire Line
+	2700 7200 2400 7200
+Wire Wire Line
+	2400 7200 2400 7000
+Connection ~ 2400 7000
+Wire Wire Line
+	3500 7000 3550 7000
+Wire Wire Line
+	3650 7000 3650 6800
+$Comp
+L power:VDD #PWR?
+U 1 1 5A860267
+P 2650 6800
+F 0 "#PWR?" H 2650 6650 50  0001 C CNN
+F 1 "VDD" H 2667 6973 50  0000 C CNN
+F 2 "" H 2650 6800 50  0001 C CNN
+F 3 "" H 2650 6800 50  0001 C CNN
+	1    2650 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 6800 2650 7000
+Wire Wire Line
+	2650 7000 2700 7000
+Wire Wire Line
+	1400 6800 1400 7000
+Wire Wire Line
+	1400 7000 1450 7000
+$Comp
+L power:GND #PWR?
+U 1 1 5A860375
+P 3100 7550
+F 0 "#PWR?" H 3100 7300 50  0001 C CNN
+F 1 "GND" H 3105 7377 50  0000 C CNN
+F 2 "" H 3100 7550 50  0001 C CNN
+F 3 "" H 3100 7550 50  0001 C CNN
+	1    3100 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5A8603A6
+P 1850 7550
+F 0 "#PWR?" H 1850 7300 50  0001 C CNN
+F 1 "GND" H 1855 7377 50  0000 C CNN
+F 2 "" H 1850 7550 50  0001 C CNN
+F 3 "" H 1850 7550 50  0001 C CNN
+	1    1850 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 7400 1850 7500
+Wire Wire Line
+	3100 7400 3100 7500
+$Comp
+L Device:C_Small C?
+U 1 1 5A86068F
+P 1400 7400
+F 0 "C?" H 1492 7446 50  0000 L CNN
+F 1 "1.0uF" H 1492 7355 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1400 7400 50  0001 C CNN
+F 3 "~" H 1400 7400 50  0001 C CNN
+	1    1400 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5A86072F
+P 2650 7400
+F 0 "C?" H 2742 7446 50  0000 L CNN
+F 1 "1.0uF" H 2742 7355 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2650 7400 50  0001 C CNN
+F 3 "~" H 2650 7400 50  0001 C CNN
+	1    2650 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 7000 1400 7300
+Connection ~ 1400 7000
+Wire Wire Line
+	2650 7000 2650 7300
+Connection ~ 2650 7000
+Wire Wire Line
+	1400 7500 1850 7500
+Connection ~ 1850 7500
+Wire Wire Line
+	1850 7500 1850 7550
+Wire Wire Line
+	2650 7500 3100 7500
+Connection ~ 3100 7500
+Wire Wire Line
+	3100 7500 3100 7550
+$Comp
+L Device:C_Small C?
+U 1 1 5A860D0B
+P 2300 7400
+F 0 "C?" H 2392 7446 50  0000 L CNN
+F 1 "1.0uF" H 2392 7355 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2300 7400 50  0001 C CNN
+F 3 "~" H 2300 7400 50  0001 C CNN
+	1    2300 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5A860D85
+P 3550 7400
+F 0 "C?" H 3642 7446 50  0000 L CNN
+F 1 "1.0uF" H 3642 7355 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3550 7400 50  0001 C CNN
+F 3 "~" H 3550 7400 50  0001 C CNN
+	1    3550 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 7000 2300 7300
+Connection ~ 2300 7000
+Wire Wire Line
+	2300 7000 2400 7000
+Wire Wire Line
+	3550 7300 3550 7000
+Connection ~ 3550 7000
+Wire Wire Line
+	3550 7000 3650 7000
+Wire Wire Line
+	3550 7500 3100 7500
+Wire Wire Line
+	2300 7500 1850 7500
+$Comp
+L Regulator_Linear:MIC5504-3.3YM5 U?
+U 1 1 5A861C39
+P 9650 1300
+F 0 "U?" H 9650 1667 50  0000 C CNN
+F 1 "MIC5504-3.3YM5" H 9650 1576 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 9650 900 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf" H 9400 1550 50  0001 C CNN
+	1    9650 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 1200 10100 1200
+Wire Wire Line
+	10200 1200 10200 1000
+$Comp
+L power:VDD #PWR?
+U 1 1 5A861C49
+P 9200 1000
+F 0 "#PWR?" H 9200 850 50  0001 C CNN
+F 1 "VDD" H 9217 1173 50  0000 C CNN
+F 2 "" H 9200 1000 50  0001 C CNN
+F 3 "" H 9200 1000 50  0001 C CNN
+	1    9200 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 1000 9200 1200
+Wire Wire Line
+	9200 1200 9250 1200
+$Comp
+L power:GND #PWR?
+U 1 1 5A861C51
+P 9650 1750
+F 0 "#PWR?" H 9650 1500 50  0001 C CNN
+F 1 "GND" H 9655 1577 50  0000 C CNN
+F 2 "" H 9650 1750 50  0001 C CNN
+F 3 "" H 9650 1750 50  0001 C CNN
+	1    9650 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 1600 9650 1700
+$Comp
+L Device:C_Small C?
+U 1 1 5A861C58
+P 9200 1600
+F 0 "C?" H 9292 1646 50  0000 L CNN
+F 1 "1.0uF" H 9292 1555 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 9200 1600 50  0001 C CNN
+F 3 "~" H 9200 1600 50  0001 C CNN
+	1    9200 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 1200 9200 1400
+Connection ~ 9200 1200
+Wire Wire Line
+	9200 1700 9650 1700
+Connection ~ 9650 1700
+Wire Wire Line
+	9650 1700 9650 1750
+$Comp
+L Device:C_Small C?
+U 1 1 5A861C64
+P 10100 1600
+F 0 "C?" H 10192 1646 50  0000 L CNN
+F 1 "1.0uF" H 10192 1555 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 10100 1600 50  0001 C CNN
+F 3 "~" H 10100 1600 50  0001 C CNN
+	1    10100 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 1500 10100 1200
+Connection ~ 10100 1200
+Wire Wire Line
+	10100 1200 10200 1200
+Wire Wire Line
+	10100 1700 9650 1700
+Wire Wire Line
+	9250 1400 9200 1400
+Connection ~ 9200 1400
+Wire Wire Line
+	9200 1400 9200 1500
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 5A862B0D
+P 10200 1000
+F 0 "#PWR?" H 10200 850 50  0001 C CNN
+F 1 "+3.3VA" H 10215 1173 50  0000 C CNN
+F 2 "" H 10200 1000 50  0001 C CNN
+F 3 "" H 10200 1000 50  0001 C CNN
+	1    10200 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 5A862B41
+P 7400 1450
+F 0 "#PWR?" H 7400 1300 50  0001 C CNN
+F 1 "+3.3VA" H 7415 1623 50  0000 C CNN
+F 2 "" H 7400 1450 50  0001 C CNN
+F 3 "" H 7400 1450 50  0001 C CNN
+	1    7400 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5A862B62
+P 7400 4000
+F 0 "#PWR?" H 7400 3750 50  0001 C CNN
+F 1 "GND" H 7405 3827 50  0000 C CNN
+F 2 "" H 7400 4000 50  0001 C CNN
+F 3 "" H 7400 4000 50  0001 C CNN
+	1    7400 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 3900 7400 4000
+NoConn ~ 6500 2400
+NoConn ~ 6500 2500
+NoConn ~ 6500 2600
+NoConn ~ 6500 2700
+NoConn ~ 6500 2800
+NoConn ~ 6500 2900
+Text GLabel 9400 3300 2    39   Output ~ 0
+FPGA_CFG_SCLK
+Text GLabel 9400 3400 2    39   Input ~ 0
+FPGA_CFG_MISO
+Text GLabel 9400 3100 2    39   Output ~ 0
+FPGA_CFG_MOSI
+Text GLabel 9400 3200 2    39   Output ~ 0
+FPGA_CFG_SS
+$Comp
+L Device:R_Small R?
+U 1 1 5A86FA9B
+P 9150 3100
+F 0 "R?" V 9200 3450 50  0000 C CNN
+F 1 "100" V 9200 3300 50  0000 C CNN
+F 2 "" H 9150 3100 50  0001 C CNN
+F 3 "~" H 9150 3100 50  0001 C CNN
+	1    9150 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5A86FD39
+P 9150 3200
+F 0 "R?" V 9200 3550 50  0000 C CNN
+F 1 "100" V 9200 3400 50  0000 C CNN
+F 2 "" H 9150 3200 50  0001 C CNN
+F 3 "~" H 9150 3200 50  0001 C CNN
+	1    9150 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5A86FD63
+P 9150 3300
+F 0 "R?" V 9200 3650 50  0000 C CNN
+F 1 "100" V 9200 3500 50  0000 C CNN
+F 2 "" H 9150 3300 50  0001 C CNN
+F 3 "~" H 9150 3300 50  0001 C CNN
+	1    9150 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5A86FD8F
+P 9150 3400
+F 0 "R?" V 9200 3750 50  0000 C CNN
+F 1 "100" V 9200 3600 50  0000 C CNN
+F 2 "" H 9150 3400 50  0001 C CNN
+F 3 "~" H 9150 3400 50  0001 C CNN
+	1    9150 3400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8300 3100 9050 3100
+Wire Wire Line
+	8300 3200 8650 3200
+Wire Wire Line
+	8300 3300 9050 3300
+Wire Wire Line
+	8300 3400 9050 3400
+Wire Wire Line
+	9250 3100 9400 3100
+Wire Wire Line
+	9250 3200 9400 3200
+Wire Wire Line
+	9250 3300 9400 3300
+Wire Wire Line
+	9250 3400 9400 3400
+$Comp
+L Device:R_Small R?
+U 1 1 5A8732F5
+P 8650 3600
+F 0 "R?" H 8591 3554 50  0000 R CNN
+F 1 "10k" H 8591 3645 50  0000 R CNN
+F 2 "" H 8650 3600 50  0001 C CNN
+F 3 "~" H 8650 3600 50  0001 C CNN
+	1    8650 3600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8650 3500 8650 3200
+Connection ~ 8650 3200
+Wire Wire Line
+	8650 3200 9050 3200
+Wire Wire Line
+	8650 3700 8650 3750
+Text Notes 8900 3650 0    39   ~ 0
+Master boot mode
+$Comp
+L Device:R_Small R?
+U 1 1 5A874DC0
+P 8400 3600
+F 0 "R?" H 8341 3554 50  0000 R CNN
+F 1 "10k" H 8341 3645 50  0000 R CNN
+F 2 "" H 8400 3600 50  0001 C CNN
+F 3 "~" H 8400 3600 50  0001 C CNN
+	1    8400 3600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8300 2700 8400 2700
+Wire Wire Line
+	8400 2700 8400 3500
+Wire Wire Line
+	8400 3700 8400 3750
+Wire Wire Line
+	8400 3750 8550 3750
+$Comp
+L power:GND #PWR?
+U 1 1 5A876272
+P 8550 3750
+F 0 "#PWR?" H 8550 3500 50  0001 C CNN
+F 1 "GND" H 8555 3577 50  0000 C CNN
+F 2 "" H 8550 3750 50  0001 C CNN
+F 3 "" H 8550 3750 50  0001 C CNN
+	1    8550 3750
+	1    0    0    -1  
+$EndComp
+Connection ~ 8550 3750
+Wire Wire Line
+	8550 3750 8650 3750
+Wire Notes Line
+	8300 3500 9450 3500
+Wire Notes Line
+	9450 3500 9450 3700
+Wire Notes Line
+	9450 3700 8300 3700
+Wire Notes Line
+	8300 3700 8300 3500
+$Comp
+L Device:R_Small R?
+U 1 1 5A876E0F
+P 8450 1750
+F 0 "R?" H 8391 1704 50  0000 R CNN
+F 1 "10k" H 8391 1795 50  0000 R CNN
+F 2 "" H 8450 1750 50  0001 C CNN
+F 3 "~" H 8450 1750 50  0001 C CNN
+	1    8450 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 5A876E99
+P 8450 1600
+F 0 "#PWR?" H 8450 1450 50  0001 C CNN
+F 1 "+3.3VA" H 8465 1773 50  0000 C CNN
+F 2 "" H 8450 1600 50  0001 C CNN
+F 3 "" H 8450 1600 50  0001 C CNN
+	1    8450 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 2000 8450 2000
+Wire Wire Line
+	8450 2000 8450 1850
+Wire Wire Line
+	8450 1600 8450 1650
+Connection ~ 8400 2700
+Text GLabel 9400 2700 2    39   Output ~ 0
+FPGA_PWR_EN
+Wire Wire Line
+	8400 2700 9400 2700
+Text GLabel 1250 7200 0    39   Input ~ 0
+FPGA_PWR_EN
+Wire Wire Line
+	1250 7200 1450 7200
+$Comp
+L Device:R_Small R?
+U 1 1 5A87D21D
+P 6350 1750
+F 0 "R?" H 6291 1704 50  0000 R CNN
+F 1 "10k" H 6291 1795 50  0000 R CNN
+F 2 "" H 6350 1750 50  0001 C CNN
+F 3 "~" H 6350 1750 50  0001 C CNN
+	1    6350 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5A87D2E3
+P 6100 1750
+F 0 "R?" H 6041 1704 50  0000 R CNN
+F 1 "10k" H 6041 1795 50  0000 R CNN
+F 2 "" H 6100 1750 50  0001 C CNN
+F 3 "~" H 6100 1750 50  0001 C CNN
+	1    6100 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 5A87F1DF
+P 6350 1600
+F 0 "#PWR?" H 6350 1450 50  0001 C CNN
+F 1 "+3.3VA" H 6365 1773 50  0000 C CNN
+F 2 "" H 6350 1600 50  0001 C CNN
+F 3 "" H 6350 1600 50  0001 C CNN
+	1    6350 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 1650 6350 1650
+Wire Wire Line
+	6350 1650 6350 1600
+Connection ~ 6350 1650
+Text GLabel 8600 2000 2    39   Input ~ 0
+UART_BOOT_EN
+Wire Wire Line
+	8450 2000 8600 2000
+Connection ~ 8450 2000
+Text GLabel 9400 2900 2    39   Output ~ 0
+ESP_UART_TX
+Text GLabel 9400 3000 2    39   Input ~ 0
+ESP_UART_RX
+Wire Wire Line
+	9400 2900 8300 2900
+Wire Wire Line
+	8300 3000 9400 3000
+Text GLabel 9400 2200 2    39   Input ~ 0
+FPGA_CDONE
+Text GLabel 9400 2300 2    39   Output ~ 0
+FPGA_CRESET
+$Comp
+L Device:R_Small R?
+U 1 1 5A887E83
+P 9150 2200
+F 0 "R?" V 9200 2550 50  0000 C CNN
+F 1 "100" V 9200 2400 50  0000 C CNN
+F 2 "" H 9150 2200 50  0001 C CNN
+F 3 "~" H 9150 2200 50  0001 C CNN
+	1    9150 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5A887EE7
+P 9150 2300
+F 0 "R?" V 9200 2650 50  0000 C CNN
+F 1 "100" V 9200 2500 50  0000 C CNN
+F 2 "" H 9150 2300 50  0001 C CNN
+F 3 "~" H 9150 2300 50  0001 C CNN
+	1    9150 2300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9250 2200 9400 2200
+Wire Wire Line
+	9250 2300 9400 2300
+Wire Wire Line
+	8300 2200 9050 2200
+Wire Wire Line
+	9050 2300 8300 2300
+Text GLabel 6000 2000 0    39   Input ~ 0
+ESP_RESET
+Wire Wire Line
+	6000 2000 6100 2000
+Wire Wire Line
+	6100 1850 6100 2000
+Connection ~ 6100 2000
+Wire Wire Line
+	6100 2000 6500 2000
+Wire Wire Line
+	6350 1850 6350 2200
+Wire Wire Line
+	6350 2200 6500 2200
+NoConn ~ 8300 2500
+NoConn ~ 8100 4750
+NoConn ~ 8300 2100
+Text GLabel 2800 3750 3    39   Input ~ 0
+FPGA_CFG_SCLK
+Text GLabel 2700 3750 3    39   Output ~ 0
+FPGA_CFG_MISO
+Text GLabel 3000 3750 3    39   Input ~ 0
+FPGA_CFG_MOSI
+Text GLabel 2900 3750 3    39   Input ~ 0
+FPGA_CFG_SS
+Wire Wire Line
+	2700 3650 2700 3750
+Wire Wire Line
+	2800 3650 2800 3750
+Wire Wire Line
+	2900 3650 2900 3750
+Wire Wire Line
+	3000 3650 3000 3750
+Text GLabel 1950 2600 0    39   Output ~ 0
+FPGA_CDONE
+Text GLabel 1950 2700 0    39   Input ~ 0
+FPGA_CRESET
+Wire Wire Line
+	1950 2600 2050 2600
+Wire Wire Line
+	2050 2700 1950 2700
+$Comp
+L Device:C_Small C?
+U 1 1 5A8A74D8
+P 5400 2300
+F 0 "C?" H 5492 2346 50  0000 L CNN
+F 1 "0.01uF" H 5492 2255 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5400 2300 50  0001 C CNN
+F 3 "~" H 5400 2300 50  0001 C CNN
+	1    5400 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5A8A7AE1
+P 5000 2700
+F 0 "C?" V 5050 2550 50  0000 L CNN
+F 1 "0.01uF" V 5100 2550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5000 2700 50  0001 C CNN
+F 3 "~" H 5000 2700 50  0001 C CNN
+	1    5000 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5A8A7B47
+P 5200 2700
+F 0 "C?" V 5250 2550 50  0000 L CNN
+F 1 "0.1uF" V 5300 2550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5200 2700 50  0001 C CNN
+F 3 "~" H 5200 2700 50  0001 C CNN
+	1    5200 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5A8A7BA1
+P 5400 2700
+F 0 "C?" V 5450 2550 50  0000 L CNN
+F 1 "1uF" V 5500 2550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5400 2700 50  0001 C CNN
+F 3 "~" H 5400 2700 50  0001 C CNN
+	1    5400 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 2600 5200 2600
+Wire Wire Line
+	5200 2600 5400 2600
+Connection ~ 5200 2600
+Wire Wire Line
+	5000 2800 5000 2850
+Wire Wire Line
+	5000 2850 5200 2850
+Wire Wire Line
+	5400 2850 5400 2800
+Wire Wire Line
+	5200 2800 5200 2850
+Connection ~ 5200 2850
+Wire Wire Line
+	5200 2850 5400 2850
+$Comp
+L power:GND #PWR?
+U 1 1 5A8B3BCA
+P 5400 2450
+F 0 "#PWR?" H 5400 2200 50  0001 C CNN
+F 1 "GND" H 5500 2450 50  0000 C CNN
+F 2 "" H 5400 2450 50  0001 C CNN
+F 3 "" H 5400 2450 50  0001 C CNN
+	1    5400 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5A8B3C10
+P 5200 2900
+F 0 "#PWR?" H 5200 2650 50  0001 C CNN
+F 1 "GND" H 5350 2850 50  0000 C CNN
+F 2 "" H 5200 2900 50  0001 C CNN
+F 3 "" H 5200 2900 50  0001 C CNN
+	1    5200 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 2400 5400 2450
+Wire Wire Line
+	5200 2850 5200 2900
+$Comp
+L power:+1V2 #PWR?
+U 1 1 5A8B8816
+P 5200 2550
+F 0 "#PWR?" H 5200 2400 50  0001 C CNN
+F 1 "+1V2" H 5215 2723 50  0000 C CNN
+F 2 "" H 5200 2550 50  0001 C CNN
+F 3 "" H 5200 2550 50  0001 C CNN
+	1    5200 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5A8B8959
+P 5400 2150
+F 0 "#PWR?" H 5400 2000 50  0001 C CNN
+F 1 "+3.3V" H 5415 2323 50  0000 C CNN
+F 2 "" H 5400 2150 50  0001 C CNN
+F 3 "" H 5400 2150 50  0001 C CNN
+	1    5400 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2550 5200 2600
+Wire Wire Line
+	5400 2150 5400 2200
+Wire Wire Line
+	4250 2300 5200 2300
+Wire Wire Line
+	5200 2300 5200 2200
+Wire Wire Line
+	5200 2200 5400 2200
+Connection ~ 5400 2200
+Wire Wire Line
+	5000 2600 4250 2600
+Connection ~ 5000 2600
+$Comp
+L Device:C_Small C?
+U 1 1 5A8CFD3E
+P 5500 3300
+F 0 "C?" V 5550 3150 50  0000 L CNN
+F 1 "0.01uF" V 5600 3150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5500 3300 50  0001 C CNN
+F 3 "~" H 5500 3300 50  0001 C CNN
+	1    5500 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5A8CFD45
+P 5700 3300
+F 0 "C?" V 5750 3150 50  0000 L CNN
+F 1 "0.1uF" V 5800 3150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5700 3300 50  0001 C CNN
+F 3 "~" H 5700 3300 50  0001 C CNN
+	1    5700 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3200 5700 3200
+Wire Wire Line
+	5500 3400 5500 3450
+$Comp
+L power:GND #PWR?
+U 1 1 5A8CFD62
+P 5700 3500
+F 0 "#PWR?" H 5700 3250 50  0001 C CNN
+F 1 "GND" H 5705 3327 50  0000 C CNN
+F 2 "" H 5700 3500 50  0001 C CNN
+F 3 "" H 5700 3500 50  0001 C CNN
+	1    5700 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V2 #PWR?
+U 1 1 5A8CFD6A
+P 5700 2900
+F 0 "#PWR?" H 5700 2750 50  0001 C CNN
+F 1 "+1V2" H 5715 3073 50  0000 C CNN
+F 2 "" H 5700 2900 50  0001 C CNN
+F 3 "" H 5700 2900 50  0001 C CNN
+	1    5700 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3400 5700 3450
+Wire Wire Line
+	5500 3450 5700 3450
+Connection ~ 5700 3450
+Wire Wire Line
+	5700 3450 5700 3500
+$Comp
+L Device:R_Small R?
+U 1 1 5A8D894E
+P 5700 3050
+F 0 "R?" H 5641 3004 50  0000 R CNN
+F 1 "100" H 5641 3095 50  0000 R CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 5700 3050 50  0001 C CNN
+F 3 "~" H 5700 3050 50  0001 C CNN
+	1    5700 3050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5700 2900 5700 2950
+Wire Wire Line
+	5700 3150 5700 3200
+Connection ~ 5700 3200
+Wire Wire Line
+	4250 2700 4850 2700
+Wire Wire Line
+	4850 2700 4850 3200
+Wire Wire Line
+	4850 3200 5500 3200
+Connection ~ 5500 3200
+$Comp
+L Device:C_Small C?
+U 1 1 5A8E47C0
+P 4200 3550
+F 0 "C?" V 4250 3400 50  0000 L CNN
+F 1 "0.01uF" V 4300 3400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4200 3550 50  0001 C CNN
+F 3 "~" H 4200 3550 50  0001 C CNN
+	1    4200 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5A8E4856
+P 4200 3400
+F 0 "#PWR?" H 4200 3250 50  0001 C CNN
+F 1 "+3.3V" H 4215 3573 50  0000 C CNN
+F 2 "" H 4200 3400 50  0001 C CNN
+F 3 "" H 4200 3400 50  0001 C CNN
+	1    4200 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3650 4200 3650
+Wire Wire Line
+	4200 3400 4200 3450
+Text Notes 4050 4100 0    39   ~ 0
+NOTE: OTP NVRAM programming is\nnot possible with this VPP_2V5\nconfiguration
+$Comp
+L Device:C_Small C?
+U 1 1 5A8EAE02
+P 4650 3550
+F 0 "C?" H 4742 3596 50  0000 L CNN
+F 1 "0.01uF" H 4742 3505 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4650 3550 50  0001 C CNN
+F 3 "~" H 4650 3550 50  0001 C CNN
+	1    4650 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5A8EB000
+P 4650 3400
+F 0 "#PWR?" H 4650 3250 50  0001 C CNN
+F 1 "+3.3V" H 4665 3573 50  0000 C CNN
+F 2 "" H 4650 3400 50  0001 C CNN
+F 3 "" H 4650 3400 50  0001 C CNN
+	1    4650 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 3400 4650 3450
+Wire Wire Line
+	4650 3650 4650 3750
+Wire Wire Line
+	4650 3750 3500 3750
+Wire Wire Line
+	3500 3750 3500 3650
+$Comp
+L Device:C_Small C?
+U 1 1 5A8F5C88
+P 600 2500
+F 0 "C?" V 650 2350 50  0000 L CNN
+F 1 "0.01uF" V 700 2350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 600 2500 50  0001 C CNN
+F 3 "~" H 600 2500 50  0001 C CNN
+	1    600  2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5A8F5C8F
+P 800 2500
+F 0 "C?" V 850 2350 50  0000 L CNN
+F 1 "0.1uF" V 900 2350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 800 2500 50  0001 C CNN
+F 3 "~" H 800 2500 50  0001 C CNN
+	1    800  2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5A8F5C96
+P 1000 2500
+F 0 "C?" V 1050 2350 50  0000 L CNN
+F 1 "1uF" V 1100 2350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1000 2500 50  0001 C CNN
+F 3 "~" H 1000 2500 50  0001 C CNN
+	1    1000 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	600  2400 800  2400
+Wire Wire Line
+	800  2400 1000 2400
+Connection ~ 800  2400
+Wire Wire Line
+	600  2600 600  2650
+Wire Wire Line
+	600  2650 800  2650
+Wire Wire Line
+	1000 2650 1000 2600
+Wire Wire Line
+	800  2600 800  2650
+Connection ~ 800  2650
+Wire Wire Line
+	800  2650 1000 2650
+$Comp
+L power:GND #PWR?
+U 1 1 5A8F5CAC
+P 800 2700
+F 0 "#PWR?" H 800 2450 50  0001 C CNN
+F 1 "GND" H 950 2650 50  0000 C CNN
+F 2 "" H 800 2700 50  0001 C CNN
+F 3 "" H 800 2700 50  0001 C CNN
+	1    800  2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  2650 800  2700
+$Comp
+L power:+1V2 #PWR?
+U 1 1 5A8F5CB4
+P 800 2350
+F 0 "#PWR?" H 800 2200 50  0001 C CNN
+F 1 "+1V2" H 815 2523 50  0000 C CNN
+F 2 "" H 800 2350 50  0001 C CNN
+F 3 "" H 800 2350 50  0001 C CNN
+	1    800  2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  2350 800  2400
+Wire Wire Line
+	1000 2400 2050 2400
+Connection ~ 1000 2400
+$Comp
+L Device:C_Small C?
+U 1 1 5A902A4E
+P 950 1900
+F 0 "C?" H 1042 1946 50  0000 L CNN
+F 1 "0.01uF" H 1042 1855 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 950 1900 50  0001 C CNN
+F 3 "~" H 950 1900 50  0001 C CNN
+	1    950  1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5A902A55
+P 950 2050
+F 0 "#PWR?" H 950 1800 50  0001 C CNN
+F 1 "GND" H 1050 2050 50  0000 C CNN
+F 2 "" H 950 2050 50  0001 C CNN
+F 3 "" H 950 2050 50  0001 C CNN
+	1    950  2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  2000 950  2050
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5A902A62
+P 950 1750
+F 0 "#PWR?" H 950 1600 50  0001 C CNN
+F 1 "+3.3V" H 965 1923 50  0000 C CNN
+F 2 "" H 950 1750 50  0001 C CNN
+F 3 "" H 950 1750 50  0001 C CNN
+	1    950  1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  1750 950  1800
+Wire Wire Line
+	950  1800 2050 1800
+Wire Wire Line
+	2050 1800 2050 2000
+Connection ~ 950  1800
+$Comp
+L power:GND #PWR?
+U 1 1 5A90BCA2
+P 2300 3700
+F 0 "#PWR?" H 2300 3450 50  0001 C CNN
+F 1 "GND" H 2305 3527 50  0000 C CNN
+F 2 "" H 2300 3700 50  0001 C CNN
+F 3 "" H 2300 3700 50  0001 C CNN
+	1    2300 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 3650 2300 3700
+Text Notes 4200 3100 0    50   ~ 0
+I3C
+Text Notes 3600 3750 1    50   ~ 0
+I3C
+$EndSCHEMATC
