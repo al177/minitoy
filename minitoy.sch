@@ -1083,22 +1083,22 @@ F 3 "" H 3400 700 50  0001 C CNN
 	1    3400 700 
 	1    0    0    -1  
 $EndComp
-Text GLabel 1950 2100 0    39   Output ~ 0
-PMOD-3.3
-Text GLabel 1950 2200 0    39   Output ~ 0
-PMOD-3.2
-Text GLabel 1950 2300 0    39   Output ~ 0
-PMOD-3.1
-Text GLabel 3000 1400 1    39   Output ~ 0
-PMOD-3.10
-Text GLabel 2900 1400 1    39   Output ~ 0
-PMOD-3.9
-Text GLabel 2800 1400 1    39   Output ~ 0
+Text GLabel 1950 2100 0    39   BiDi ~ 0
 PMOD-3.8
-Text GLabel 2700 1400 1    39   Output ~ 0
-PMOD-3.7
-Text GLabel 2600 1400 1    39   Output ~ 0
+Text GLabel 1950 2200 0    39   BiDi ~ 0
+PMOD-3.9
+Text GLabel 1950 2300 0    39   BiDi ~ 0
+PMOD-3.10
+Text GLabel 3000 1400 1    39   BiDi ~ 0
+PMOD-3.1
+Text GLabel 2900 1400 1    39   BiDi ~ 0
+PMOD-3.2
+Text GLabel 2800 1400 1    39   BiDi ~ 0
+PMOD-3.3
+Text GLabel 2700 1400 1    39   BiDi ~ 0
 PMOD-3.4
+Text GLabel 2600 1400 1    39   BiDi ~ 0
+PMOD-3.7
 Wire Wire Line
 	1950 2100 2050 2100
 Wire Wire Line
@@ -1115,17 +1115,6 @@ Wire Wire Line
 	2900 1400 2900 1450
 Wire Wire Line
 	3000 1400 3000 1450
-$Comp
-L Connector_Generic:Conn_02x06_Top_Bottom J2
-U 1 1 5A985BCC
-P 4950 4900
-F 0 "J2" H 5000 5317 50  0000 C CNN
-F 1 "PMOD1" H 5000 5226 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Angled_2x06_Pitch2.54mm" H 4950 4900 50  0001 C CNN
-F 3 "~" H 4950 4900 50  0001 C CNN
-	1    4950 4900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4750 5100 4600 5100
 Wire Wire Line
@@ -1253,17 +1242,6 @@ Wire Wire Line
 	3100 3750 3100 3650
 Wire Wire Line
 	3200 3750 3200 3650
-$Comp
-L Connector_Generic:Conn_02x06_Top_Bottom J3
-U 1 1 5AA5BE7F
-P 6550 4900
-F 0 "J3" H 6600 5317 50  0000 C CNN
-F 1 "PMOD2" H 6600 5226 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Angled_2x06_Pitch2.54mm" H 6550 4900 50  0001 C CNN
-F 3 "~" H 6550 4900 50  0001 C CNN
-	1    6550 4900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6350 5100 6200 5100
 Wire Wire Line
@@ -1614,17 +1592,6 @@ F 3 "~" H 3400 850 50  0001 C CNN
 	1    3400 900 
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Connector_Generic:Conn_02x06_Top_Bottom J5
-U 1 1 5A90DDFA
-P 8150 4900
-F 0 "J5" H 8200 5317 50  0000 C CNN
-F 1 "PMOD3" H 8200 5226 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Angled_2x06_Pitch2.54mm" H 8150 4900 50  0001 C CNN
-F 3 "~" H 8150 4900 50  0001 C CNN
-	1    8150 4900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7950 5100 7800 5100
 Wire Wire Line
@@ -1735,4 +1702,37 @@ NoConn ~ 4250 2000
 NoConn ~ 4250 2100
 NoConn ~ 3200 1450
 NoConn ~ 3600 1450
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J2
+U 1 1 5A98A244
+P 4950 4900
+F 0 "J2" H 5000 5317 50  0000 C CNN
+F 1 "PMOD1" H 5000 5226 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Angled_2x06_Pitch2.54mm" H 4950 4900 50  0001 C CNN
+F 3 "~" H 4950 4900 50  0001 C CNN
+	1    4950 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J3
+U 1 1 5A98A3A3
+P 6550 4900
+F 0 "J3" H 6600 5317 50  0000 C CNN
+F 1 "PMOD2" H 6600 5226 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Angled_2x06_Pitch2.54mm" H 6550 4900 50  0001 C CNN
+F 3 "~" H 6550 4900 50  0001 C CNN
+	1    6550 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J5
+U 1 1 5A98A433
+P 8150 4900
+F 0 "J5" H 8200 5317 50  0000 C CNN
+F 1 "PMOD3" H 8200 5226 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Angled_2x06_Pitch2.54mm" H 8150 4900 50  0001 C CNN
+F 3 "~" H 8150 4900 50  0001 C CNN
+	1    8150 4900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
