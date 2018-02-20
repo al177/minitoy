@@ -740,8 +740,6 @@ F 3 "~" H 5700 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5500 3200 5700 3200
-Wire Wire Line
 	5500 3400 5500 3450
 $Comp
 L power:GND #PWR017
@@ -1083,22 +1081,22 @@ F 3 "" H 3400 700 50  0001 C CNN
 	1    3400 700 
 	1    0    0    -1  
 $EndComp
-Text GLabel 1950 2100 0    39   BiDi ~ 0
-PMOD-3.8
-Text GLabel 1950 2200 0    39   BiDi ~ 0
-PMOD-3.9
-Text GLabel 1950 2300 0    39   BiDi ~ 0
-PMOD-3.10
-Text GLabel 3000 1400 1    39   BiDi ~ 0
-PMOD-3.1
-Text GLabel 2900 1400 1    39   BiDi ~ 0
-PMOD-3.2
-Text GLabel 2800 1400 1    39   BiDi ~ 0
-PMOD-3.3
 Text GLabel 2700 1400 1    39   BiDi ~ 0
-PMOD-3.4
+PMOD-2.8
+Text GLabel 1950 2100 0    39   BiDi ~ 0
+PMOD-2.9
+Text GLabel 1950 2300 0    39   BiDi ~ 0
+PMOD-2.10
+Text GLabel 3000 1400 1    39   BiDi ~ 0
+PMOD-2.1
+Text GLabel 2800 1400 1    39   BiDi ~ 0
+PMOD-2.2
 Text GLabel 2600 1400 1    39   BiDi ~ 0
-PMOD-3.7
+PMOD-2.3
+Text GLabel 1950 2200 0    39   BiDi ~ 0
+PMOD-2.4
+Text GLabel 2900 1400 1    39   BiDi ~ 0
+PMOD-2.7
 Wire Wire Line
 	1950 2100 2050 2100
 Wire Wire Line
@@ -1210,133 +1208,6 @@ Wire Wire Line
 	5250 4900 5350 4900
 Wire Wire Line
 	5250 5000 5350 5000
-Text GLabel 1950 2500 0    39   BiDi ~ 0
-PMOD-2.1
-Text GLabel 1950 2800 0    39   BiDi ~ 0
-PMOD-2.2
-Text GLabel 1950 2900 0    39   BiDi ~ 0
-PMOD-2.3
-Text GLabel 1950 3000 0    39   BiDi ~ 0
-PMOD-2.4
-Text GLabel 1950 3100 0    39   BiDi ~ 0
-PMOD-2.7
-Text GLabel 2600 3750 3    39   BiDi ~ 0
-PMOD-2.8
-Text GLabel 3100 3750 3    39   BiDi ~ 0
-PMOD-2.9
-Text GLabel 3200 3750 3    39   BiDi ~ 0
-PMOD-2.10
-Wire Wire Line
-	1950 2500 2050 2500
-Wire Wire Line
-	1950 2800 2050 2800
-Wire Wire Line
-	1950 2900 2050 2900
-Wire Wire Line
-	1950 3000 2050 3000
-Wire Wire Line
-	1950 3100 2050 3100
-Wire Wire Line
-	2600 3750 2600 3650
-Wire Wire Line
-	3100 3750 3100 3650
-Wire Wire Line
-	3200 3750 3200 3650
-Wire Wire Line
-	6350 5100 6200 5100
-Wire Wire Line
-	6200 5100 6200 5300
-Wire Wire Line
-	6350 5200 6350 5450
-Wire Wire Line
-	6350 5450 6850 5450
-Wire Wire Line
-	6850 5450 6850 5200
-$Comp
-L power:GND #PWR029
-U 1 1 5AA5BE8B
-P 6200 5300
-F 0 "#PWR029" H 6200 5050 50  0001 C CNN
-F 1 "GND" H 6205 5127 50  0000 C CNN
-F 2 "" H 6200 5300 50  0001 C CNN
-F 3 "" H 6200 5300 50  0001 C CNN
-	1    6200 5300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR027
-U 1 1 5AA5BE91
-P 7250 5250
-F 0 "#PWR027" H 7250 5100 50  0001 C CNN
-F 1 "+3.3V" H 7265 5423 50  0000 C CNN
-F 2 "" H 7250 5250 50  0001 C CNN
-F 3 "" H 7250 5250 50  0001 C CNN
-	1    7250 5250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6850 5450 7250 5450
-Wire Wire Line
-	7250 5450 7250 5300
-Connection ~ 6850 5450
-Wire Wire Line
-	6200 5300 6950 5300
-Wire Wire Line
-	6950 5300 6950 5100
-Wire Wire Line
-	6950 5100 6850 5100
-Connection ~ 6200 5300
-$Comp
-L Device:C_Small C15
-U 1 1 5AA5BE9E
-P 7100 5300
-F 0 "C15" V 7150 5150 50  0000 L CNN
-F 1 "0.1uF" V 7200 5150 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7100 5300 50  0001 C CNN
-F 3 "~" H 7100 5300 50  0001 C CNN
-	1    7100 5300
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7000 5300 6950 5300
-Connection ~ 6950 5300
-Wire Wire Line
-	7200 5300 7250 5300
-Connection ~ 7250 5300
-Wire Wire Line
-	7250 5300 7250 5250
-Text GLabel 6250 4700 0    39   BiDi ~ 0
-PMOD-2.1
-Text GLabel 6250 4800 0    39   BiDi ~ 0
-PMOD-2.2
-Text GLabel 6250 4900 0    39   BiDi ~ 0
-PMOD-2.3
-Text GLabel 6250 5000 0    39   BiDi ~ 0
-PMOD-2.4
-Text GLabel 6950 4700 2    39   BiDi ~ 0
-PMOD-2.7
-Text GLabel 6950 4800 2    39   BiDi ~ 0
-PMOD-2.8
-Text GLabel 6950 4900 2    39   BiDi ~ 0
-PMOD-2.9
-Text GLabel 6950 5000 2    39   BiDi ~ 0
-PMOD-2.10
-Wire Wire Line
-	6250 4700 6350 4700
-Wire Wire Line
-	6250 4800 6350 4800
-Wire Wire Line
-	6250 4900 6350 4900
-Wire Wire Line
-	6250 5000 6350 5000
-Wire Wire Line
-	6850 4700 6950 4700
-Wire Wire Line
-	6850 4800 6950 4800
-Wire Wire Line
-	6850 4900 6950 4900
-Wire Wire Line
-	6850 5000 6950 5000
 Text GLabel 4400 3100 2    39   BiDi ~ 0
 PMOD-1.1
 Text GLabel 3600 3850 3    39   BiDi ~ 0
@@ -1593,100 +1464,100 @@ F 3 "~" H 3400 850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7950 5100 7800 5100
+	6300 5100 6150 5100
 Wire Wire Line
-	7800 5100 7800 5300
+	6150 5100 6150 5300
 Wire Wire Line
-	7950 5200 7950 5450
+	6300 5200 6300 5450
 Wire Wire Line
-	7950 5450 8450 5450
+	6300 5450 6800 5450
 Wire Wire Line
-	8450 5450 8450 5200
+	6800 5450 6800 5200
 $Comp
 L power:GND #PWR02
 U 1 1 5A90DE06
-P 7800 5300
-F 0 "#PWR02" H 7800 5050 50  0001 C CNN
-F 1 "GND" H 7805 5127 50  0000 C CNN
-F 2 "" H 7800 5300 50  0001 C CNN
-F 3 "" H 7800 5300 50  0001 C CNN
-	1    7800 5300
+P 6150 5300
+F 0 "#PWR02" H 6150 5050 50  0001 C CNN
+F 1 "GND" H 6155 5127 50  0000 C CNN
+F 2 "" H 6150 5300 50  0001 C CNN
+F 3 "" H 6150 5300 50  0001 C CNN
+	1    6150 5300
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR024
 U 1 1 5A90DE0C
-P 8850 5250
-F 0 "#PWR024" H 8850 5100 50  0001 C CNN
-F 1 "+3.3V" H 8865 5423 50  0000 C CNN
-F 2 "" H 8850 5250 50  0001 C CNN
-F 3 "" H 8850 5250 50  0001 C CNN
-	1    8850 5250
+P 7200 5250
+F 0 "#PWR024" H 7200 5100 50  0001 C CNN
+F 1 "+3.3V" H 7215 5423 50  0000 C CNN
+F 2 "" H 7200 5250 50  0001 C CNN
+F 3 "" H 7200 5250 50  0001 C CNN
+	1    7200 5250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8450 5450 8850 5450
+	6800 5450 7200 5450
 Wire Wire Line
-	8850 5450 8850 5300
-Connection ~ 8450 5450
+	7200 5450 7200 5300
+Connection ~ 6800 5450
 Wire Wire Line
-	7800 5300 8550 5300
+	6150 5300 6900 5300
 Wire Wire Line
-	8550 5300 8550 5100
+	6900 5300 6900 5100
 Wire Wire Line
-	8550 5100 8450 5100
-Connection ~ 7800 5300
+	6900 5100 6800 5100
+Connection ~ 6150 5300
 $Comp
 L Device:C_Small C25
 U 1 1 5A90DE19
-P 8700 5300
-F 0 "C25" V 8750 5150 50  0000 L CNN
-F 1 "0.1uF" V 8800 5150 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 8700 5300 50  0001 C CNN
-F 3 "~" H 8700 5300 50  0001 C CNN
-	1    8700 5300
+P 7050 5300
+F 0 "C25" V 7100 5150 50  0000 L CNN
+F 1 "0.1uF" V 7150 5150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7050 5300 50  0001 C CNN
+F 3 "~" H 7050 5300 50  0001 C CNN
+	1    7050 5300
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8600 5300 8550 5300
-Connection ~ 8550 5300
+	6950 5300 6900 5300
+Connection ~ 6900 5300
 Wire Wire Line
-	8800 5300 8850 5300
-Connection ~ 8850 5300
+	7150 5300 7200 5300
+Connection ~ 7200 5300
 Wire Wire Line
-	8850 5300 8850 5250
-Text GLabel 7850 4700 0    39   BiDi ~ 0
-PMOD-3.1
-Text GLabel 7850 4800 0    39   BiDi ~ 0
-PMOD-3.2
-Text GLabel 7850 4900 0    39   BiDi ~ 0
-PMOD-3.3
-Text GLabel 7850 5000 0    39   BiDi ~ 0
-PMOD-3.4
-Text GLabel 8550 4700 2    39   BiDi ~ 0
-PMOD-3.7
-Text GLabel 8550 4800 2    39   BiDi ~ 0
-PMOD-3.8
-Text GLabel 8550 4900 2    39   BiDi ~ 0
-PMOD-3.9
-Text GLabel 8550 5000 2    39   BiDi ~ 0
-PMOD-3.10
+	7200 5300 7200 5250
+Text GLabel 6200 4700 0    39   BiDi ~ 0
+PMOD-2.1
+Text GLabel 6200 4800 0    39   BiDi ~ 0
+PMOD-2.2
+Text GLabel 6200 4900 0    39   BiDi ~ 0
+PMOD-2.3
+Text GLabel 6200 5000 0    39   BiDi ~ 0
+PMOD-2.4
+Text GLabel 6900 4700 2    39   BiDi ~ 0
+PMOD-2.7
+Text GLabel 6900 4800 2    39   BiDi ~ 0
+PMOD-2.8
+Text GLabel 6900 4900 2    39   BiDi ~ 0
+PMOD-2.9
+Text GLabel 6900 5000 2    39   BiDi ~ 0
+PMOD-2.10
 Wire Wire Line
-	7850 4700 7950 4700
+	6200 4700 6300 4700
 Wire Wire Line
-	7850 4800 7950 4800
+	6200 4800 6300 4800
 Wire Wire Line
-	7850 4900 7950 4900
+	6200 4900 6300 4900
 Wire Wire Line
-	7850 5000 7950 5000
+	6200 5000 6300 5000
 Wire Wire Line
-	8450 4700 8550 4700
+	6800 4700 6900 4700
 Wire Wire Line
-	8450 4800 8550 4800
+	6800 4800 6900 4800
 Wire Wire Line
-	8450 4900 8550 4900
+	6800 4900 6900 4900
 Wire Wire Line
-	8450 5000 8550 5000
+	6800 5000 6900 5000
 $Comp
 L lattice:ICE40UP5K-SG48 U1
 U 1 1 5A85C0FE
@@ -1714,25 +1585,26 @@ F 3 "~" H 4950 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x06_Odd_Even J3
-U 1 1 5A98A3A3
-P 6550 4900
-F 0 "J3" H 6600 5317 50  0000 C CNN
-F 1 "PMOD2" H 6600 5226 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Angled_2x06_Pitch2.54mm" H 6550 4900 50  0001 C CNN
-F 3 "~" H 6550 4900 50  0001 C CNN
-	1    6550 4900
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_02x06_Odd_Even J5
 U 1 1 5A98A433
-P 8150 4900
-F 0 "J5" H 8200 5317 50  0000 C CNN
-F 1 "PMOD3" H 8200 5226 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Angled_2x06_Pitch2.54mm" H 8150 4900 50  0001 C CNN
-F 3 "~" H 8150 4900 50  0001 C CNN
-	1    8150 4900
+P 6500 4900
+F 0 "J5" H 6550 5317 50  0000 C CNN
+F 1 "PMOD2" H 6550 5226 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Angled_2x06_Pitch2.54mm" H 6500 4900 50  0001 C CNN
+F 3 "~" H 6500 4900 50  0001 C CNN
+	1    6500 4900
 	1    0    0    -1  
 $EndComp
+NoConn ~ 2050 2500
+NoConn ~ 2050 2800
+NoConn ~ 2050 2900
+NoConn ~ 2050 3000
+NoConn ~ 2050 3100
+NoConn ~ 2600 3650
+NoConn ~ 3100 3650
+NoConn ~ 3200 3650
+Wire Wire Line
+	5500 3200 5700 3200
+Text Label 5150 3200 0    39   ~ 0
+VCCPLL
 $EndSCHEMATC
