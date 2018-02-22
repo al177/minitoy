@@ -26,10 +26,10 @@ F 3 "http://wiki.ai-thinker.com/_media/esp8266/docs/aithinker_esp_12f_datasheet_
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Linear:MIC5504-3.3YM5 U4
+L Regulator_Linear:MIC5504-3.3YM5 U3
 U 1 1 5A85F78C
 P 3550 7100
-F 0 "U4" H 3550 7467 50  0000 C CNN
+F 0 "U3" H 3550 7467 50  0000 C CNN
 F 1 "MIC5504-3.3YM5" H 3550 7376 50  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23-5_HandSoldering" H 3550 6700 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf" H 3300 7350 50  0001 C CNN
@@ -37,10 +37,10 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf" H 3300 7350 50
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Linear:MIC5504-1.2YM5 U3
+L Regulator_Linear:MIC5504-1.2YM5 U4
 U 1 1 5A85FB41
 P 1850 7100
-F 0 "U3" H 1850 7467 50  0000 C CNN
+F 0 "U4" H 1850 7467 50  0000 C CNN
 F 1 "MIC5504-1.2YM5" H 1850 7376 50  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23-5_HandSoldering" H 1850 6700 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf" H 1600 7350 50  0001 C CNN
@@ -134,10 +134,10 @@ Wire Wire Line
 Wire Wire Line
 	3550 7400 3550 7500
 $Comp
-L Device:C_Small C16
+L Device:C_Small C19
 U 1 1 5A86068F
 P 1400 7400
-F 0 "C16" H 1492 7446 50  0000 L CNN
+F 0 "C19" H 1492 7446 50  0000 L CNN
 F 1 "1.0uF" H 1492 7355 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1400 7400 50  0001 C CNN
 F 3 "~" H 1400 7400 50  0001 C CNN
@@ -145,10 +145,10 @@ F 3 "~" H 1400 7400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C19
+L Device:C_Small C16
 U 1 1 5A86072F
 P 3100 7400
-F 0 "C19" H 3192 7446 50  0000 L CNN
+F 0 "C16" H 3192 7446 50  0000 L CNN
 F 1 "1.0uF" H 3192 7355 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3100 7400 50  0001 C CNN
 F 3 "~" H 3100 7400 50  0001 C CNN
@@ -156,7 +156,7 @@ F 3 "~" H 3100 7400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1400 7000 1400 7300
+	1400 7000 1400 7200
 Connection ~ 1400 7000
 Wire Wire Line
 	3100 7000 3100 7300
@@ -172,10 +172,10 @@ Connection ~ 3550 7500
 Wire Wire Line
 	3550 7500 3550 7550
 $Comp
-L Device:C_Small C17
+L Device:C_Small C20
 U 1 1 5A860D0B
 P 2300 7400
-F 0 "C17" H 2392 7446 50  0000 L CNN
+F 0 "C20" H 2392 7446 50  0000 L CNN
 F 1 "1.0uF" H 2392 7355 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2300 7400 50  0001 C CNN
 F 3 "~" H 2300 7400 50  0001 C CNN
@@ -183,10 +183,10 @@ F 3 "~" H 2300 7400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C20
+L Device:C_Small C17
 U 1 1 5A860D85
 P 4000 7400
-F 0 "C20" H 4092 7446 50  0000 L CNN
+F 0 "C17" H 4092 7446 50  0000 L CNN
 F 1 "1.0uF" H 4092 7355 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4000 7400 50  0001 C CNN
 F 3 "~" H 4000 7400 50  0001 C CNN
@@ -331,58 +331,14 @@ NoConn ~ 6500 2600
 NoConn ~ 6500 2700
 NoConn ~ 6500 2800
 NoConn ~ 6500 2900
-Text GLabel 9400 3300 2    39   Output ~ 0
+Text GLabel 9050 3300 2    39   Output ~ 0
 FPGA_CFG_SCLK
-Text GLabel 9400 3400 2    39   Input ~ 0
+Text GLabel 9050 3400 2    39   Input ~ 0
 FPGA_CFG_MISO
-Text GLabel 9400 3100 2    39   Output ~ 0
+Text GLabel 9050 3100 2    39   Output ~ 0
 FPGA_CFG_MOSI
-Text GLabel 9400 3200 2    39   Output ~ 0
+Text GLabel 9050 3200 2    39   Output ~ 0
 FPGA_CFG_SS
-$Comp
-L Device:R_Small R15
-U 1 1 5A86FA9B
-P 9150 3100
-F 0 "R15" V 9200 3450 50  0000 C CNN
-F 1 "100" V 9200 3300 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" H 9150 3100 50  0001 C CNN
-F 3 "~" H 9150 3100 50  0001 C CNN
-	1    9150 3100
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R16
-U 1 1 5A86FD39
-P 9150 3200
-F 0 "R16" V 9200 3550 50  0000 C CNN
-F 1 "100" V 9200 3400 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" H 9150 3200 50  0001 C CNN
-F 3 "~" H 9150 3200 50  0001 C CNN
-	1    9150 3200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R17
-U 1 1 5A86FD63
-P 9150 3300
-F 0 "R17" V 9200 3650 50  0000 C CNN
-F 1 "100" V 9200 3500 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" H 9150 3300 50  0001 C CNN
-F 3 "~" H 9150 3300 50  0001 C CNN
-	1    9150 3300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R18
-U 1 1 5A86FD8F
-P 9150 3400
-F 0 "R18" V 9200 3750 50  0000 C CNN
-F 1 "100" V 9200 3600 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" H 9150 3400 50  0001 C CNN
-F 3 "~" H 9150 3400 50  0001 C CNN
-	1    9150 3400
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	8300 3100 9050 3100
 Wire Wire Line
@@ -391,14 +347,6 @@ Wire Wire Line
 	8300 3300 9050 3300
 Wire Wire Line
 	8300 3400 9050 3400
-Wire Wire Line
-	9250 3100 9400 3100
-Wire Wire Line
-	9250 3200 9400 3200
-Wire Wire Line
-	9250 3300 9400 3300
-Wire Wire Line
-	9250 3400 9400 3400
 $Comp
 L Device:R_Small R20
 U 1 1 5A8732F5
@@ -488,15 +436,6 @@ Wire Wire Line
 	8450 2000 8450 1850
 Wire Wire Line
 	8450 1600 8450 1650
-Connection ~ 8400 2700
-Text GLabel 9400 2700 2    39   Output ~ 0
-FPGA_PWR_EN
-Wire Wire Line
-	8400 2700 9400 2700
-Text GLabel 1250 7200 0    39   Input ~ 0
-FPGA_PWR_EN
-Wire Wire Line
-	1250 7200 1450 7200
 $Comp
 L Device:R_Small R9
 U 1 1 5A87D21D
@@ -521,51 +460,19 @@ F 3 "" H 6450 1600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6450 1650 6450 1600
-Text GLabel 9000 2000 2    39   Input ~ 0
+Text GLabel 9050 2000 2    39   Input ~ 0
 ESP_PROG
 Connection ~ 8450 2000
-Text GLabel 9400 2900 2    39   Output ~ 0
+Text GLabel 9050 2900 2    39   Output ~ 0
 ESP_UART_TX
-Text GLabel 9400 3000 2    39   Input ~ 0
+Text GLabel 9050 3000 2    39   Input ~ 0
 ESP_UART_RX
-Wire Wire Line
-	9400 2900 8300 2900
-Wire Wire Line
-	8300 3000 9400 3000
-Text GLabel 9400 2200 2    39   Input ~ 0
+Text GLabel 9050 2100 2    39   Input ~ 0
 FPGA_CDONE
-Text GLabel 9400 2300 2    39   Output ~ 0
+Text GLabel 9050 2200 2    39   Output ~ 0
 FPGA_CRESET
-$Comp
-L Device:R_Small R12
-U 1 1 5A887E83
-P 9150 2200
-F 0 "R12" V 9200 2550 50  0000 C CNN
-F 1 "100" V 9200 2400 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" H 9150 2200 50  0001 C CNN
-F 3 "~" H 9150 2200 50  0001 C CNN
-	1    9150 2200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R13
-U 1 1 5A887EE7
-P 9150 2300
-F 0 "R13" V 9200 2650 50  0000 C CNN
-F 1 "100" V 9200 2500 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" H 9150 2300 50  0001 C CNN
-F 3 "~" H 9150 2300 50  0001 C CNN
-	1    9150 2300
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9250 2200 9400 2200
-Wire Wire Line
-	9250 2300 9400 2300
 Wire Wire Line
 	8300 2200 9050 2200
-Wire Wire Line
-	9050 2300 8300 2300
 Text GLabel 6100 2100 0    39   Input ~ 0
 ESP_PROG
 Wire Wire Line
@@ -600,61 +507,12 @@ L Device:C_Small C3
 U 1 1 5A8A74D8
 P 5400 2300
 F 0 "C3" H 5492 2346 50  0000 L CNN
-F 1 "0.01uF" H 5492 2255 50  0000 L CNN
+F 1 "0.1uF" H 5492 2255 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5400 2300 50  0001 C CNN
 F 3 "~" H 5400 2300 50  0001 C CNN
 	1    5400 2300
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C_Small C7
-U 1 1 5A8A7AE1
-P 5000 2700
-F 0 "C7" V 5050 2550 50  0000 L CNN
-F 1 "0.01uF" V 5100 2550 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5000 2700 50  0001 C CNN
-F 3 "~" H 5000 2700 50  0001 C CNN
-	1    5000 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C8
-U 1 1 5A8A7B47
-P 5200 2700
-F 0 "C8" V 5250 2550 50  0000 L CNN
-F 1 "0.1uF" V 5300 2550 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5200 2700 50  0001 C CNN
-F 3 "~" H 5200 2700 50  0001 C CNN
-	1    5200 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C9
-U 1 1 5A8A7BA1
-P 5400 2700
-F 0 "C9" V 5450 2550 50  0000 L CNN
-F 1 "1uF" V 5500 2550 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5400 2700 50  0001 C CNN
-F 3 "~" H 5400 2700 50  0001 C CNN
-	1    5400 2700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5000 2600 5200 2600
-Wire Wire Line
-	5200 2600 5400 2600
-Connection ~ 5200 2600
-Wire Wire Line
-	5000 2800 5000 2850
-Wire Wire Line
-	5000 2850 5200 2850
-Wire Wire Line
-	5400 2850 5400 2800
-Wire Wire Line
-	5200 2800 5200 2850
-Connection ~ 5200 2850
-Wire Wire Line
-	5200 2850 5400 2850
 $Comp
 L power:GND #PWR010
 U 1 1 5A8B3BCA
@@ -666,21 +524,8 @@ F 3 "" H 5400 2450 50  0001 C CNN
 	1    5400 2450
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR013
-U 1 1 5A8B3C10
-P 5200 2900
-F 0 "#PWR013" H 5200 2650 50  0001 C CNN
-F 1 "GND" H 5350 2850 50  0000 C CNN
-F 2 "" H 5200 2900 50  0001 C CNN
-F 3 "" H 5200 2900 50  0001 C CNN
-	1    5200 2900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5400 2400 5400 2450
-Wire Wire Line
-	5200 2850 5200 2900
 $Comp
 L power:+1V2 #PWR011
 U 1 1 5A8B8816
@@ -714,9 +559,6 @@ Wire Wire Line
 Wire Wire Line
 	5200 2200 5400 2200
 Connection ~ 5400 2200
-Wire Wire Line
-	5000 2600 4250 2600
-Connection ~ 5000 2600
 $Comp
 L Device:C_Small C10
 U 1 1 5A8CFD3E
@@ -786,10 +628,6 @@ Wire Wire Line
 Wire Wire Line
 	5700 3150 5700 3200
 Connection ~ 5700 3200
-Wire Wire Line
-	4850 2700 4850 3200
-Wire Wire Line
-	4850 3200 5500 3200
 Connection ~ 5500 3200
 $Comp
 L Device:C_Small C12
@@ -817,30 +655,6 @@ Wire Wire Line
 	4200 3400 4200 3450
 Text Notes 4050 4250 0    39   ~ 0
 NOTE: OTP NVRAM programming is\nnot possible with this VPP_2V5\nconfiguration
-$Comp
-L Device:C_Small C13
-U 1 1 5A8EAE02
-P 4650 3550
-F 0 "C13" V 4700 3400 50  0000 L CNN
-F 1 "0.01uF" V 4750 3400 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4650 3550 50  0001 C CNN
-F 3 "~" H 4650 3550 50  0001 C CNN
-	1    4650 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR016
-U 1 1 5A8EB000
-P 4650 3400
-F 0 "#PWR016" H 4650 3250 50  0001 C CNN
-F 1 "+3.3V" H 4665 3573 50  0000 C CNN
-F 2 "" H 4650 3400 50  0001 C CNN
-F 3 "" H 4650 3400 50  0001 C CNN
-	1    4650 3400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4650 3400 4650 3450
 $Comp
 L Device:C_Small C4
 U 1 1 5A8F5C88
@@ -924,7 +738,7 @@ L Device:C_Small C1
 U 1 1 5A902A4E
 P 950 1900
 F 0 "C1" H 1042 1946 50  0000 L CNN
-F 1 "0.01uF" H 1042 1855 50  0000 L CNN
+F 1 "0.1uF" H 1042 1855 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 950 1900 50  0001 C CNN
 F 3 "~" H 950 1900 50  0001 C CNN
 	1    950  1900
@@ -1009,8 +823,6 @@ F 3 "~" H 8800 2000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8450 2000 8650 2000
-Wire Wire Line
-	8950 2000 9000 2000
 $Comp
 L Connector_Generic:Conn_01x06 J1
 U 1 1 5A8A290F
@@ -1232,23 +1044,10 @@ Wire Wire Line
 	4400 3000 4250 3000
 Wire Wire Line
 	4400 2900 4250 2900
-$Comp
-L Device:R_Small R11
-U 1 1 5AAD597C
-P 9150 2100
-F 0 "R11" V 9200 2450 50  0000 C CNN
-F 1 "100" V 9200 2300 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" H 9150 2100 50  0001 C CNN
-F 3 "~" H 9150 2100 50  0001 C CNN
-	1    9150 2100
-	0    -1   -1   0   
-$EndComp
-Text GLabel 9400 2100 2    39   Input ~ 0
+Text GLabel 9050 2700 2    39   Input ~ 0
 FPGA_INT
 Wire Wire Line
 	8300 2100 9050 2100
-Wire Wire Line
-	9250 2100 9400 2100
 Wire Wire Line
 	3300 1150 3200 1150
 Wire Wire Line
@@ -1271,10 +1070,8 @@ Wire Wire Line
 	4250 2400 4450 2400
 Wire Wire Line
 	4250 2500 4450 2500
-Text GLabel 4400 2800 2    39   Input ~ 0
+Text GLabel 2600 3750 3    39   Input ~ 0
 FPGA_INT
-Wire Wire Line
-	4250 2800 4400 2800
 Text GLabel 3300 3750 3    39   Input ~ 0
 ESP_UART_TX
 Text GLabel 3400 3750 3    39   Output ~ 0
@@ -1292,10 +1089,7 @@ Wire Wire Line
 	4100 3650 3700 3650
 Connection ~ 4200 3450
 Wire Wire Line
-	4650 3450 4500 3450
-Wire Wire Line
 	3500 3800 3500 3650
-Connection ~ 4650 3450
 $Comp
 L power:GND #PWR019
 U 1 1 5AD63EFD
@@ -1307,29 +1101,8 @@ F 3 "" H 4200 3700 50  0001 C CNN
 	1    4200 3700
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR020
-U 1 1 5AD63F8E
-P 4650 3700
-F 0 "#PWR020" H 4650 3450 50  0001 C CNN
-F 1 "GND" H 4655 3527 50  0000 C CNN
-F 2 "" H 4650 3700 50  0001 C CNN
-F 3 "" H 4650 3700 50  0001 C CNN
-	1    4650 3700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3500 3800 3950 3800
-Wire Wire Line
-	3950 3800 3950 4000
-Wire Wire Line
-	3950 4000 4500 4000
-Wire Wire Line
-	4500 3450 4500 4000
 Wire Wire Line
 	4200 3700 4200 3650
-Wire Wire Line
-	4650 3650 4650 3700
 $Comp
 L Connector_Specialized:USB_B_Micro J4
 U 1 1 5ADA11C7
@@ -1372,10 +1145,10 @@ NoConn ~ 1300 5350
 Wire Wire Line
 	900  5750 1000 5750
 $Comp
-L Device:CP_Small C21
+L Device:CP_Small C18
 U 1 1 5A8B945F
 P 4350 7400
-F 0 "C21" H 4438 7446 50  0000 L CNN
+F 0 "C18" H 4438 7446 50  0000 L CNN
 F 1 "47uF" H 4438 7355 50  0000 L CNN
 F 2 "Capacitors_SMD:CP_Elec_5x5.3" H 4350 7400 50  0001 C CNN
 F 3 "~" H 4350 7400 50  0001 C CNN
@@ -1393,10 +1166,10 @@ Wire Wire Line
 	4000 7500 4350 7500
 Connection ~ 4000 7500
 $Comp
-L Device:CP_Small C18
+L Device:CP_Small C21
 U 1 1 5A965C7D
 P 2650 7400
-F 0 "C18" H 2738 7446 50  0000 L CNN
+F 0 "C21" H 2738 7446 50  0000 L CNN
 F 1 "47uF" H 2738 7355 50  0000 L CNN
 F 2 "Capacitors_SMD:CP_Elec_5x5.3" H 2650 7400 50  0001 C CNN
 F 3 "~" H 2650 7400 50  0001 C CNN
@@ -1439,8 +1212,6 @@ Wire Wire Line
 	1300 5150 1350 5150
 Wire Wire Line
 	1350 5150 1350 5100
-Wire Wire Line
-	4850 2700 4250 2700
 $Comp
 L power:PWR_FLAG #FLG01
 U 1 1 5AA061A2
@@ -1569,8 +1340,6 @@ F 3 "" H 3150 2550 60  0001 C CNN
 	1    3150 2550
 	1    0    0    -1  
 $EndComp
-NoConn ~ 4250 2000
-NoConn ~ 4250 2100
 NoConn ~ 3200 1450
 NoConn ~ 3600 1450
 $Comp
@@ -1596,15 +1365,103 @@ F 3 "~" H 6500 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 2050 2500
-NoConn ~ 2050 2800
-NoConn ~ 2050 2900
-NoConn ~ 2050 3000
-NoConn ~ 2050 3100
-NoConn ~ 2600 3650
-NoConn ~ 3100 3650
 NoConn ~ 3200 3650
 Wire Wire Line
 	5500 3200 5700 3200
 Text Label 5150 3200 0    39   ~ 0
 VCCPLL
+Wire Wire Line
+	2600 3750 2600 3650
+Wire Wire Line
+	4250 2600 5200 2600
+Wire Wire Line
+	8950 2000 9050 2000
+Wire Wire Line
+	9050 2700 8400 2700
+Connection ~ 8400 2700
+Wire Wire Line
+	9050 2900 8300 2900
+Wire Wire Line
+	9050 3000 8300 3000
+Wire Wire Line
+	3500 3800 4100 3800
+Wire Wire Line
+	4100 3800 4100 3650
+Connection ~ 4100 3650
+$Comp
+L Device:C_Small C13
+U 1 1 5A8EAE02
+P 4400 3550
+F 0 "C13" V 4450 3400 50  0000 L CNN
+F 1 "0.1uF" V 4500 3400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4400 3550 50  0001 C CNN
+F 3 "~" H 4400 3550 50  0001 C CNN
+	1    4400 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3450 4400 3450
+Wire Wire Line
+	4200 3650 4400 3650
+Connection ~ 4200 3650
+NoConn ~ 3100 3650
+NoConn ~ 8300 2300
+Wire Wire Line
+	1450 7200 1400 7200
+Connection ~ 1400 7200
+Wire Wire Line
+	1400 7200 1400 7300
+$Comp
+L power:GND #PWR013
+U 1 1 5A9852AD
+P 4950 2100
+F 0 "#PWR013" H 4950 1850 50  0001 C CNN
+F 1 "GND" H 4955 1927 50  0000 C CNN
+F 2 "" H 4950 2100 50  0001 C CNN
+F 3 "" H 4950 2100 50  0001 C CNN
+	1    4950 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2000 4950 2000
+Wire Wire Line
+	4950 2000 4950 2100
+Wire Wire Line
+	4250 2100 4250 2000
+Connection ~ 4250 2000
+Wire Wire Line
+	2050 2800 2050 2900
+Wire Wire Line
+	2050 3100 2050 3000
+Wire Wire Line
+	2050 2900 2050 3000
+Connection ~ 2050 2900
+Connection ~ 2050 3000
+Wire Wire Line
+	2050 3100 2050 3700
+Wire Wire Line
+	2050 3700 2300 3700
+Connection ~ 2050 3100
+Connection ~ 2300 3700
+Wire Wire Line
+	5500 3200 5150 3200
+Wire Wire Line
+	5150 3200 5150 2700
+Wire Wire Line
+	5150 2700 4250 2700
+$Comp
+L power:GND #PWR?
+U 1 1 5A9D7127
+P 4950 2900
+F 0 "#PWR?" H 4950 2650 50  0001 C CNN
+F 1 "GND" H 4955 2727 50  0000 C CNN
+F 2 "" H 4950 2900 50  0001 C CNN
+F 3 "" H 4950 2900 50  0001 C CNN
+	1    4950 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2800 4950 2800
+Wire Wire Line
+	4950 2800 4950 2900
 $EndSCHEMATC
