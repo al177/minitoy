@@ -365,49 +365,28 @@ Wire Wire Line
 	8650 3200 9050 3200
 Wire Wire Line
 	8650 3700 8650 3750
-Text Notes 8900 3650 0    39   ~ 0
-Master boot mode
 $Comp
 L Device:R_Small R19
 U 1 1 5A874DC0
-P 8400 3600
-F 0 "R19" H 8341 3554 50  0000 R CNN
-F 1 "10k" H 8341 3645 50  0000 R CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" H 8400 3600 50  0001 C CNN
-F 3 "~" H 8400 3600 50  0001 C CNN
-	1    8400 3600
+P 8650 2550
+F 0 "R19" H 8591 2504 50  0000 R CNN
+F 1 "10k" H 8591 2595 50  0000 R CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 8650 2550 50  0001 C CNN
+F 3 "~" H 8650 2550 50  0001 C CNN
+	1    8650 2550
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	8300 2700 8400 2700
-Wire Wire Line
-	8400 2700 8400 3500
-Wire Wire Line
-	8400 3700 8400 3750
-Wire Wire Line
-	8400 3750 8550 3750
 $Comp
 L power:GND #PWR021
 U 1 1 5A876272
-P 8550 3750
-F 0 "#PWR021" H 8550 3500 50  0001 C CNN
-F 1 "GND" H 8555 3577 50  0000 C CNN
-F 2 "" H 8550 3750 50  0001 C CNN
-F 3 "" H 8550 3750 50  0001 C CNN
-	1    8550 3750
+P 8650 3750
+F 0 "#PWR021" H 8650 3500 50  0001 C CNN
+F 1 "GND" H 8655 3577 50  0000 C CNN
+F 2 "" H 8650 3750 50  0001 C CNN
+F 3 "" H 8650 3750 50  0001 C CNN
+	1    8650 3750
 	1    0    0    -1  
 $EndComp
-Connection ~ 8550 3750
-Wire Wire Line
-	8550 3750 8650 3750
-Wire Notes Line
-	8300 3500 9450 3500
-Wire Notes Line
-	9450 3500 9450 3700
-Wire Notes Line
-	9450 3700 8300 3700
-Wire Notes Line
-	8300 3700 8300 3500
 $Comp
 L Device:R_Small R10
 U 1 1 5A876E0F
@@ -473,10 +452,10 @@ Text GLabel 9050 2200 2    39   Output ~ 0
 FPGA_CRESET
 Wire Wire Line
 	8300 2200 9050 2200
-Text GLabel 6100 2100 0    39   Input ~ 0
+Text GLabel 6000 2000 0    39   Input ~ 0
 ESP_PROG
 Wire Wire Line
-	6450 1850 6450 2100
+	6450 1850 6450 2000
 NoConn ~ 8300 2500
 Text GLabel 2800 3750 3    39   Input ~ 0
 FPGA_CFG_SCLK
@@ -792,24 +771,21 @@ Text Notes 4200 3100 0    50   ~ 0
 I3C
 Text Notes 3600 3750 1    50   ~ 0
 I3C
-NoConn ~ 6500 2000
 Wire Wire Line
 	7400 3900 7400 4000
 $Comp
 L Device:C_Small C2
 U 1 1 5A88AFAF
-P 6250 2100
-F 0 "C2" V 6300 1950 50  0000 L CNN
-F 1 "0.1uF" V 6350 1950 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6250 2100 50  0001 C CNN
-F 3 "~" H 6250 2100 50  0001 C CNN
-	1    6250 2100
+P 6150 2000
+F 0 "C2" V 6200 1850 50  0000 L CNN
+F 1 "1uF" V 6250 1850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6150 2000 50  0001 C CNN
+F 3 "~" H 6150 2000 50  0001 C CNN
+	1    6150 2000
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6100 2100 6150 2100
-Wire Wire Line
-	6350 2100 6450 2100
+	6000 2000 6050 2000
 $Comp
 L Device:D_Schottky D10
 U 1 1 5A89401E
@@ -865,11 +841,6 @@ Wire Wire Line
 	9400 3900 9700 3900
 Text Notes 9800 4550 0    50   ~ 0
 FTDI 3.3V UART
-Wire Wire Line
-	6450 2100 6450 2200
-Wire Wire Line
-	6450 2200 6500 2200
-Connection ~ 6450 2100
 Text Notes 9600 3900 0    39   ~ 0
 DTR
 Text Notes 9600 4100 0    39   ~ 0
@@ -879,7 +850,7 @@ RXD
 Text Notes 9600 4400 0    39   ~ 0
 GND
 Text Notes 9600 4200 0    39   ~ 0
-3.3V
+5V
 Text Notes 9600 4300 0    39   ~ 0
 CTS
 $Comp
@@ -1377,9 +1348,6 @@ Wire Wire Line
 Wire Wire Line
 	8950 2000 9050 2000
 Wire Wire Line
-	9050 2700 8400 2700
-Connection ~ 8400 2700
-Wire Wire Line
 	9050 2900 8300 2900
 Wire Wire Line
 	9050 3000 8300 3000
@@ -1450,10 +1418,10 @@ Wire Wire Line
 Wire Wire Line
 	5150 2700 4250 2700
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0101
 U 1 1 5A9D7127
 P 4950 2900
-F 0 "#PWR?" H 4950 2650 50  0001 C CNN
+F 0 "#PWR0101" H 4950 2650 50  0001 C CNN
 F 1 "GND" H 4955 2727 50  0000 C CNN
 F 2 "" H 4950 2900 50  0001 C CNN
 F 3 "" H 4950 2900 50  0001 C CNN
@@ -1464,4 +1432,47 @@ Wire Wire Line
 	4250 2800 4950 2800
 Wire Wire Line
 	4950 2800 4950 2900
+Wire Wire Line
+	6250 2000 6450 2000
+$Comp
+L Device:R_Small R1
+U 1 1 5AA8ED30
+P 6300 1750
+F 0 "R1" H 6450 1700 50  0000 R CNN
+F 1 "10k" H 6500 1800 50  0000 R CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 6300 1750 50  0001 C CNN
+F 3 "~" H 6300 1750 50  0001 C CNN
+	1    6300 1750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6300 1650 6300 1600
+Wire Wire Line
+	6300 1600 6450 1600
+Connection ~ 6450 1600
+Wire Wire Line
+	6300 1850 6300 2200
+Wire Wire Line
+	6300 2200 6500 2200
+Wire Wire Line
+	6450 2000 6500 2000
+Connection ~ 6450 2000
+$Comp
+L power:+3.3VA #PWR0102
+U 1 1 5AAC04AE
+P 8650 2450
+F 0 "#PWR0102" H 8650 2300 50  0001 C CNN
+F 1 "+3.3VA" H 8650 2600 50  0000 C CNN
+F 2 "" H 8650 2450 50  0001 C CNN
+F 3 "" H 8650 2450 50  0001 C CNN
+	1    8650 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 2700 8650 2700
+Wire Wire Line
+	8650 2650 8650 2700
+Connection ~ 8650 2700
+Wire Wire Line
+	8650 2700 9050 2700
 $EndSCHEMATC
