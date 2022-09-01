@@ -22,3 +22,4 @@ Possible improvements:
 Included are iceboot.py, a Micropython module that can boot an ICE40 bitstream, and boot.py which is a startup script to load a
 bitstream on Micropython power-up.
 
+*** If you wish to use iceboot.py with modern Micropython, please use the currently maintained version here: https://github.com/al177/blinkencard/blob/master/micropython/iceboot.py . The version here is specific to an old version of the LoBoris fork, and the machine API for SPI has changed since.
